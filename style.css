@@ -1,0 +1,280 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    box-sizing: border-box;
+}
+body {
+    background-color: #080808;
+    color: #fff;
+}
+.container{
+    padding: 10px 80px;
+}
+#header{
+    background-image: url("Untitled design (8).png");
+    background-size: cover;
+    height: 100%;
+    padding: 0 0 110px 0;
+
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    background-color:#FF204E;
+    padding: 10px 0 10px 10px;
+
+}
+.logo{
+    width: 140px;
+    height: 50px;
+    color: #fff;
+    font-size: 140%;
+    font-style: italic;
+    display: flex;
+    z-index: 1;
+}
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+    z-index: 1;
+}
+nav ul li a{
+    font-size: 18px;
+    text-decoration: none;
+    position: relative;
+    color: #fff;
+    cursor: pointer;
+}
+nav ul li a::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #FFF7F1;
+    left: 0;
+    bottom: -6px;
+    transition: 1s;
+}
+nav ul li a:hover::after{
+    width:100%;
+}
+.header-text{
+    margin-top: 10%;
+    font-size: 40px;
+    width: 60vh;
+
+}
+.header-text h1{
+    margin-top: 10%;
+    font-size: 60px;
+    font-style: italic;
+}
+.header-text h1 span{
+    color: #FF204E;
+}
+button{
+    margin-right: 10px ;
+}
+.buttons button {
+    padding: 12px ;
+    border-radius: 10px;
+    background-color:#FF204E;
+    cursor: pointer;
+}
+#about{
+    padding: 15px 0 5px 0;
+    color: antiquewhite;
+}
+ .row{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+ }
+.about-col-1{
+    flex-basis: 33%;
+
+}
+.about-col-1 img{
+    width: 100%;
+    border-radius: 15px;
+}
+.about-col-2{
+    flex-basis: 60%;
+}
+.subtitle{
+    font-size: 80px;
+    font-weight: 600;
+    color: #fff;
+    padding:30px;
+}
+.tab-titles{
+    display: flex;
+    margin: 20px 0 40px;
+
+}
+.tab-links{
+    margin-right: 50px;
+    font-size: 18px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+.tab-links::after{
+    position: absolute;
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #ff004f;
+    left: 0;
+    bottom: -8px;
+    transition: 0.5s;
+    
+}
+.tab-content ul li{
+    color: #ff004f;
+}
+
+/*--------skills-----*/
+#Skills {
+    padding: 30px 20px 10px 10px;
+    font-size:30px;
+}
+.skills-list{
+    display:flex;
+    grid-template-columns: repeat(auto-fit,minmax(250px,1fr));
+    grid-gap:40px;
+}
+.skills-list div {
+    background-color:#262626;
+    padding :15px;
+    font-size:30px;
+    font-weight:300;
+    border-radius:10px;
+}
+.grid-1{
+    justify-content:center;
+    width: 50%;
+    padding: 0 0 20px 20px;
+    
+}
+.icon i{
+    font-size: 50px;
+    align-items: center;
+    gap:10px;
+    padding: 25px;
+}
+.icon{
+    padding: 20px 20px 0 20px;
+}
+.list ul{
+    padding: 10px;
+}
+.list ul li{
+    padding: 5px;
+    list-style-type: none;
+}
+.skills-list div:hover{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.skills-list div:hover .icon{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+.skills-list div:hover .list{
+    background-color: #ff004f;
+    transform: translateY(-10px);
+    transition: 0.5s;
+}
+
+/*-----project---*/
+#PROJECTS{
+    margin-top: 20px;
+    padding: 30px 20px 10px 10px;
+    font-size:30px;
+    
+}
+.project-list{
+    display:flex;
+    grid-gap:40px;
+    justify-items: center;
+    object-fit: contain;
+    border-radius: 10px;
+}
+.project-list img{
+    height: 70vh;
+    width: 60vb;
+    border-radius: 10px;
+}
+
+/*-----contact----*/
+#Contact-me{
+    margin-top: 50px;
+    padding: 10px;
+    font-size:60px;
+}
+.sub-title{
+    font-size: 55px;
+    padding: 30px 0 20px 0;
+}
+.contact-left{
+    flex-basis: 35%;
+}
+.contact-right{
+    flex-basis: 60%;
+}
+.contact-left p{
+    margin-top: 30px;
+    font-size: 30px;
+}
+.contact-left p i{
+    margin-right: 15px;
+    font-size: 60px;
+    color: #ff004f;
+}
+.social-icon{
+    margin-top: 30px;
+}
+.social-icon a{
+    text-decoration: none;
+    font-size: 60px;
+    padding: 10px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.5s;
+}
+.social-icon a:hover{
+    color: #ff004f;
+    transform: translateY(-5px);
+
+}
+.contact-right button{
+    padding: 14px 60px ;
+    border-radius: 10px;
+    background-color:#FF204E;
+    cursor: pointer;
+    font-size: 18px;
+
+}
+.contact-right form{
+    width: 100%;
+    margin-top: 60px;
+}
+form input, form textarea{
+    width: 100%;
+    outline: none;
+    border: 0;
+    background: #262626;
+    padding: 15px;
+    color: #fff;
+    margin: 15px 0;
+    font-size: 20px;
+    border-radius: 6px;
+}
